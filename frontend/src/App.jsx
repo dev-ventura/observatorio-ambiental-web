@@ -1,4 +1,5 @@
 import Globito from "./components/Globito";
+import WrapperGlobe from "./components/WrapperGlobe"
 import { Menu } from "./components/Menu";
 
 const App = () => {
@@ -9,11 +10,12 @@ const App = () => {
           <Menu />
         </div>
         <div>
-          <Globito />
+          <WrapperGlobe />
         </div>
       </div>
     </>
   );
 };
+
 
 export default App;
