@@ -1,9 +1,11 @@
 import Globito from "./components/Globito"
+import WrapperGlobe from "./components/WrapperGlobe"
 
 const App = () => {
   return (
     <div>
-      <Globito />
+      {/* <Globito /> */}
+      <WrapperGlobe />
     </div>
   )
 }
