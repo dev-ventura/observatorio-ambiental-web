@@ -38,6 +38,7 @@ const WrapperGlobe = () => {
     //   console.log(error);
     //   setPointsData(csvToJson(fires));
     // }
+    setPointsData(csvToJson(fires));
   };
 
   useEffect(() => {
