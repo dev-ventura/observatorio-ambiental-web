@@ -1,9 +1,9 @@
 .sectionNews {
     display: grid;
     width: 70%;
-    height: 30%;
-    margin: 30px;
-    padding: 20px;
+    height: 100vh;
+    padding: 0 20px;
+    overflow-y: scroll;
 }
 
 .titleNews {
@@ -25,7 +25,7 @@
 }
 
 .articleTitle, .articleSnippet {
-    margin: 25px;
+    margin: 0 25px;
     color: rgba(1, 21, 38, 1)
 }
 
@@ -36,7 +36,13 @@
     text-decoration-line: underline;
 }
 
+.imgWrapper {
+    width:400px;
+}
+
 .imageNews {
     border-radius: 5px;
+    object-fit: cover;
+    width:100%;
 }
 

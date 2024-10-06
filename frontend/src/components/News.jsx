@@ -47,13 +47,15 @@ const News = () => {
           <div className="news-container">
             {news.map((article, index) => (
               <div key={index} className="newsItem">
-                { article.pagemap.cse_thumbnail ? (
-                  <img
-                  className="imageNews"
-                  src={article.pagemap.cse_thumbnail[0].src }
-                />
-                ): null }
-                
+                {article.pagemap.cse_thumbnail ? (
+                  <div className="imgWrapper">
+                    <img
+                      className="imageNews"
+                      src={article.pagemap.cse_thumbnail[0].src}
+                    />
+                  </div>
+                ) : null}
+
                 <div>
                   <h2 className="articleTitle">{article.title}</h2>
                   <p className="articleSnippet">{article.snippet}</p>
