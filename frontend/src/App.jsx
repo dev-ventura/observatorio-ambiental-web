@@ -1,21 +1,24 @@
-import Globito from "./components/Globito";
-import WrapperGlobe from "./components/WrapperGlobe"
-import { Menu } from "./components/Menu";
+// aqui vamos a hacer el enrutamiento
+//import React from "react";
+import { BrowserRouter, Routes, Route } from "react-router-dom";
+import Principal from "./components/Principal";
+import FireMap from "./components/FireMap";
+import AirQualityMap from "./components/AirQualityMap";
+import AnimalBiodiversity from "./components/AnimalBiodiversity";
+import News from "./components/News";
 
-const App = () => {
+function App() {
   return (
-    <>
-      <div className="page">
-        <div>
-          <Menu />
-        </div>
-        <div>
-          <WrapperGlobe />
-        </div>
-      </div>
-    </>
+    <BrowserRouter>
+      <Routes>
+        <Route path="/" element={<Principal />} />
+        <Route path="fire-map" element={<FireMap />} />
+        <Route path="air-quality-map" element={<AirQualityMap />} />
+        <Route path="animal-biodiversity" element={<AnimalBiodiversity />} />
+        <Route path="news" element={<News />} />
+      </Routes>
+    </BrowserRouter>
   );
-};
+}
 
-
-export default App;
+export { App };

@@ -68,7 +68,7 @@ const WrapperGlobe = () => {
         //   onPolygonClick={() => {alert("ANIMALITOS")}}
         pointsData={pointsData}
         width={width * 0.7}
-        height={600}
+        height={height}
         pointColor={() => "#FF0000"}
         pointAltitude={0.01}
       />

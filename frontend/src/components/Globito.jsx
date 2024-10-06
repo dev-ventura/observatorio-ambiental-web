@@ -1,21 +1,24 @@
 // src/components/Globe.jsx
 import { useEffect, useRef } from 'react';
-import Globe from 'globe.gl';
+import Globe from "react-globe.gl";
+import useWindowSize from "../hooks/useWindowSize";
 
 const Globito = () => {
   const globeRef = useRef(null);
 
-  useEffect(() => {
-    Globe()(globeRef.current)
-      .globeImageUrl('//unpkg.com/three-globe/example/img/earth-blue-marble.jpg')
-      .bumpImageUrl('//unpkg.com/three-globe/example/img/earth-topology.png')
-      .backgroundImageUrl('//unpkg.com/three-globe/example/img/night-sky.png');
-      
-    return () => {
-    };
-  }, []);
+  const { width, height } = useWindowSize();
 
-  return <div ref={globeRef} style={{ width: '70%', height: '100vh' }} />;
+  return (
+    <div style={{ width: "500px", height: "500px" }}>
+      <Globe
+        ref={globeRef}
+        globeImageUrl="//unpkg.com/three-globe/example/img/earth-dark.jpg"
+
+        width={width * 0.7}
+        height={height}
+      />
+    </div>
+  )
 };
 
 export default Globito;
