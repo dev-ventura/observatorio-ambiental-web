@@ -33,6 +33,7 @@ h2, .titleBiodiversity, .nameAnimal, .typeAnimal, .regionAnimal {
 .imageAnimal {
     object-fit: cover;
     max-width:400px;
+    margin: 0 auto;
 }
 
 .nameAnimal {
