@@ -68,7 +68,7 @@ const WrapperGlobe = () => {
         //   polygonsTransitionDuration={transitionDuration}
         //   onPolygonClick={() => {alert("ANIMALITOS")}}
         pointsData={pointsData}
-        width={width * 0.7}
+        width={width * 0.72}
         height={height}
         pointColor={() => "#FF0000"}
         pointAltitude={0.01}

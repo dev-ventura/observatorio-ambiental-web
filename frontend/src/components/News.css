@@ -1,0 +1,42 @@
+.sectionNews {
+    display: grid;
+    width: 70%;
+    height: 30%;
+    margin: 30px;
+    padding: 20px;
+}
+
+.titleNews {
+    color: rgba(1, 21, 38, 1);
+    text-align: center;
+    font-size: 40px;
+}
+
+.newsItem {
+    display: flex;
+    flex-direction: row;
+    border-style: solid;
+    border-color: rgba(1, 21, 38, 1);
+    border-width: 1px;
+    border-radius: 5px;
+    margin-bottom: 15px;
+    padding: 1.5em;
+   
+}
+
+.articleTitle, .articleSnippet {
+    margin: 25px;
+    color: rgba(1, 21, 38, 1)
+}
+
+.articleLink {
+    margin: 25px;
+    margin-bottom: 20px;
+    color: rgba(44, 89, 79, 1);
+    text-decoration-line: underline;
+}
+
+.imageNews {
+    border-radius: 5px;
+}
+
