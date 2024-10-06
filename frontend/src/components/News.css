@@ -1,3 +1,7 @@
+* {
+    box-sizing: border-box;
+}
+
 .sectionNews {
     display: grid;
     width: 70%;
@@ -44,5 +48,11 @@
     border-radius: 5px;
     object-fit: cover;
     width:100%;
+}
+
+@media (width <= 800px) {
+    .sectionNews {
+        width: 100%;
+    }
 }
 

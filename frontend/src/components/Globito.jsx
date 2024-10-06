@@ -20,7 +20,7 @@ const Globito = () => {
         backgroundImageUrl="//unpkg.com/three-globe/example/img/night-sky.png"
         bumpImageUrl="//unpkg.com/three-globe/example/img/earth-topology.png"
         globeImageUrl="//unpkg.com/three-globe/example/img/earth-blue-marble.jpg"
-        width={width * 0.72}
+        width={width * (width <= 800 ? 1 : 0.72)}
         height={height}
       />
     </div>

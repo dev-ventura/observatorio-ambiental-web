@@ -45,7 +45,7 @@ const WrapperAQ = () => {
         ref={globeEl}
         globeImageUrl="//unpkg.com/three-globe/example/img/earth-day.jpg"
         pointsData={pointsData}
-        width={width * 0.7}
+        width={width * (width <= 800 ? 1 : 0.72)}
         height={height}
         pointColor={(d) => {
           const value = d['value_pm25'];
