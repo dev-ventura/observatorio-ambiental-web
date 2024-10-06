@@ -22,10 +22,15 @@
   color: #2c594f !important;
 }
 
+.wrapperLogo {
+    display: flex;
+    flex-direction: column;
+}
+
 .logoProject {
   width: 15rem;
   align-self: center;
-  margin-top: 15%;
+  margin-top:15%;
 }
 
 .titleProject {
@@ -54,12 +59,15 @@
 
   .titleProject {
     margin-top: 30px;
+    font-size: calc(1vw + 10px);
+    display: none;
   }
 
   .wrapperLogo {
     display: flex;
     font-size: 12px;
-    margin-right:auto;
+    /* margin-right:auto; */
+    flex-direction: row;
   }
 
   .logoProject {
@@ -68,7 +76,7 @@
   }
 
   .option {
-    margin: 20px;
+    margin: calc(12px + 1vw);
   }
 
   .text-link {

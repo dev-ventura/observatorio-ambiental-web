@@ -1,5 +1,7 @@
 * {
     box-sizing: border-box;
+    padding:0;
+    margin:0;
 }
 
 .sectionNews {
@@ -27,6 +29,15 @@
     padding: 1.5em;
 }
 
+.articleTitle {
+    font-size: 20px;
+    margin-bottom: 15px;
+}
+
+.articleSnippet {
+    line-height: 24px;
+}
+
 .articleTitle, .articleSnippet {
     margin: 0 25px;
     color: rgba(1, 21, 38, 1)
@@ -49,9 +60,28 @@
     width:100%;
 }
 
+.titleNews {
+    margin:16px 0;
+}
+
 @media (width <= 800px) {
     .sectionNews {
         width: 100%;
+        padding:0;
     }
+
+    .imgWrapper {
+        width: 100%;
+    }
+    .newsItem {
+        flex-direction: column;
+        width: 100%;
+        margin:0;
+        padding:0 0 10px 0;
+    }
+    .articleTitle{
+        margin:0;
+    }
+
 }
 

@@ -15,7 +15,7 @@ function App() {
         <Route path="fire-map" element={<FireMap />} />
         <Route path="air-quality-map" element={<AirQualityMap />} />
         <Route path="animal-biodiversity" element={<AnimalBiodiversity />} />
-        <Route path="news" element={<News />} />
+        <Route path="news/:q" element={<News />} />
       </Routes>
     </BrowserRouter>
   );

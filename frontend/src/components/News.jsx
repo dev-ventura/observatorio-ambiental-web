@@ -1,19 +1,22 @@
 import { useState, useEffect } from "react";
 import { Menu } from "./Menu";
+import backupNews from "../data/backupNews";
+import { useParams } from "react-router-dom";
 import "./News.css";
 
 const News = () => {
-  const [news, setNews] = useState([]);
+  const [news, setNews] = useState([...backupNews.news]);
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState(null);
 
-  const query = "incendios bolivia";
+  const { q } = useParams();
+  console.log(q)
 
   useEffect(() => {
     const fetchNews = async () => {
       try {
         const response = await fetch(
-          `https://google-news-consultor.onrender.com/api?q=${query}`
+          `https://google-news-consultor.onrender.com/api?q=${q}`
         );
         const data = await response.json();
         setNews(data.news);
@@ -26,8 +29,6 @@ const News = () => {
 
     fetchNews();
   }, []);
-
-  console.log(news);
 
   if (error) {
     return <div>Error: {error}</div>;

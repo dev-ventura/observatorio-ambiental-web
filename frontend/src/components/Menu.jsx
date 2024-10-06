@@ -8,7 +8,7 @@ export const Menu = () => {
       <div className="wrapperLogo">
         <img className="logoProject" src="logo-project.png"></img>
         <Link to="/">
-          <h2 className="titleProject">OBSERVATORIO AMBIENTAL</h2>
+          <h2 className="titleProject">OBSERVATORIO <br/> AMBIENTAL</h2>
         </Link>
       </div>
       <NavLink to="/fire-map">
@@ -29,7 +29,7 @@ export const Menu = () => {
           <span className="text-link">Biodiversidad afectada</span>
         </span>
       </NavLink>
-      <NavLink to="/news">
+      <NavLink to="/news/incendios bolivia">
         <span className="option">
           <i className="fa-solid fa-newspaper"></i>{" "}
           <span className="text-link">Noticias</span>

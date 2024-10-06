@@ -1,8 +1,13 @@
-h2 {
+.container-biodiversity h2 {
     text-align: center;
     margin-top: 40px;
     margin-bottom: 5px;
     font-size: 35px;
+}
+.container-biodiversity {
+    overflow-y: scroll;
+    max-height: 100vh;
+    width:100%;
 }
 .cards {
     margin: 30px;
@@ -27,8 +32,7 @@ h2, .titleBiodiversity, .nameAnimal, .typeAnimal, .regionAnimal {
 
 .imageAnimal {
     object-fit: cover;
-    width: 400px;
-    height: 250px;
+    max-width:400px;
 }
 
 .nameAnimal {
@@ -36,7 +40,22 @@ h2, .titleBiodiversity, .nameAnimal, .typeAnimal, .regionAnimal {
     font-size: 25px;
 }
 
-p {
-    line-height: 0.5;
+.newsAnimal p {
+    line-height: 30px;
     margin-left: 10px;
+}
+
+@media (width <= 800px) {
+    .cards {
+        margin:0;
+        gap:10px;
+    }
+    .newsAnimal {
+        width: 100%;
+        margin:0;
+    }
+
+    .container-biodiversity h2 {
+        width:400px;
+    }
 }
