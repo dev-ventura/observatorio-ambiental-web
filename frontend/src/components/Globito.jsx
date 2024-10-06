@@ -7,14 +7,15 @@ const Globito = () => {
   const globeRef = useRef(null);
 
   const { width, height } = useWindowSize();
-
+console.log("width", width);
+console.log("height", height);
   return (
     <div style={{ width: "500px", height: "500px" }}>
       <Globe
         ref={globeRef}
         globeImageUrl="//unpkg.com/three-globe/example/img/earth-dark.jpg"
 
-        width={width * 0.7}
+        width={width * 0.72}
         height={height}
       />
     </div>
