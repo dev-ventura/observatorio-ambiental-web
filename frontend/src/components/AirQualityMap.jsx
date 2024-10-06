@@ -1,4 +1,8 @@
 import { Menu } from "./Menu";
+import WrapperAQ from "./WrapperAQ";
+import AirQualityLegend from "./AirQualityLegend";
+import './AirQualityMap.css';
+
 const AirQualityMap = () => {
   return (
     <>
@@ -7,7 +11,8 @@ const AirQualityMap = () => {
         <Menu />
       </div>
       <div>
-        <p>Globo del mapa de calidad del aire</p>
+        <WrapperAQ />
+        <AirQualityLegend />
       </div>
     </div>
   </>
