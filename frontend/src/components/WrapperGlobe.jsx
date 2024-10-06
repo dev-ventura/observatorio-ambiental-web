@@ -23,6 +23,7 @@ const WrapperGlobe = () => {
         "/VIIRS_NOAA20_NRT/world/1";
       const response = await axios.get(URL);
       // console.log("axios",response.data);
+      console.log(response.data)
       const jsonData = csvToJson(response.data);
       console.log("axios", jsonData);
       setPointsData(jsonData);
