@@ -6,9 +6,9 @@ export const Menu = () => {
   return (
     <div className="menu">
       <div className="wrapperLogo">
-        <img className="logoProject" src="logo-project.png"></img>
+        <img className="logoProject" src="/logo-project.png"></img>
         <Link to="/">
-          <h2 className="titleProject">OBSERVATORIO <br/> AMBIENTAL</h2>
+          <h2 className="titleProject">AirFireMonitor</h2>
         </Link>
       </div>
       <NavLink to="/fire-map">
@@ -33,6 +33,12 @@ export const Menu = () => {
         <span className="option">
           <i className="fa-solid fa-newspaper"></i>{" "}
           <span className="text-link">Noticias</span>
+        </span>
+      </NavLink>
+      <NavLink to="/donate">
+        <span className="option">
+        <i className="fa-solid fa-circle-dollar-to-slot"></i>{" "}
+          <span className="text-link">Donativos</span>
         </span>
       </NavLink>
     </div>
