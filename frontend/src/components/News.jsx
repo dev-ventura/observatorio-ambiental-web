@@ -29,10 +29,6 @@ const News = () => {
 
   console.log(news);
 
-  if (loading) {
-    return <div>Loading...</div>;
-  }
-
   if (error) {
     return <div>Error: {error}</div>;
   }
@@ -42,34 +38,40 @@ const News = () => {
         <div>
           <Menu />
         </div>
-        <div className="sectionNews">
-          <h1 className="titleNews">Noticias</h1>
-          <div className="news-container">
-            {news.map((article, index) => (
-              <div key={index} className="newsItem">
-                { article.pagemap.cse_thumbnail ? (
-                  <img
-                  className="imageNews"
-                  src={article.pagemap.cse_thumbnail[0].src }
-                />
-                ): null }
-                
-                <div>
-                  <h2 className="articleTitle">{article.title}</h2>
-                  <p className="articleSnippet">{article.snippet}</p>
-                  <a
-                    className="articleLink"
-                    href={article.link}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                  >
-                    Leer más...{" "}
-                  </a>
+        {loading ? (
+          <div>Loading...</div>
+        ) : (
+          <div className="sectionNews">
+            <h1 className="titleNews">Noticias</h1>
+            <div className="news-container">
+              {news.map((article, index) => (
+                <div key={index} className="newsItem">
+                  {article.pagemap.cse_thumbnail ? (
+                    <div className="imgWrapper">
+                      <img
+                        className="imageNews"
+                        src={article.pagemap.cse_thumbnail[0].src}
+                      />
+                    </div>
+                  ) : null}
+
+                  <div>
+                    <h2 className="articleTitle">{article.title}</h2>
+                    <p className="articleSnippet">{article.snippet}</p>
+                    <a
+                      className="articleLink"
+                      href={article.link}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                    >
+                      Leer más...{" "}
+                    </a>
+                  </div>
                 </div>
-              </div>
-            ))}
+              ))}
+            </div>
           </div>
-        </div>
+        )}
       </div>
     </>
   );

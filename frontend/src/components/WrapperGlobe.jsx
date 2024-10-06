@@ -65,7 +65,7 @@ const WrapperGlobe = () => {
         backgroundImageUrl="//unpkg.com/three-globe/example/img/night-sky.png"
         bumpImageUrl="//unpkg.com/three-globe/example/img/earth-topology.png"
         pointsData={pointsData}
-        width={width * 0.72}
+        width={width * (width <= 800 ? 1 : 0.72)}
         height={height}
         pointColor={() => "#ff0000"}
         pointAltitude={0.01}
