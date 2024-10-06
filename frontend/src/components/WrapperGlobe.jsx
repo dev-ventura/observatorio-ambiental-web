@@ -40,9 +40,9 @@ const WrapperGlobe = () => {
 
   useEffect(() => {
     globeEl.current.controls().autoRotate = true;
-    globeEl.current.controls().autoRotateSpeed = 0.3;
+    globeEl.current.controls().autoRotateSpeed = 0.2;
 
-    globeEl.current.pointOfView({ altitude: 4 }, 5000);
+    // globeEl.current.pointOfView({ altitude: 4 }, 5000);
 
     getFires();
   }, []);
