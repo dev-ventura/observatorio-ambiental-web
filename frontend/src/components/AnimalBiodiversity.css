@@ -1,0 +1,42 @@
+h2 {
+    text-align: center;
+    margin-top: 40px;
+    margin-bottom: 5px;
+    font-size: 35px;
+}
+.cards {
+    margin: 30px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.newsAnimal {
+    border-style: solid;
+    border-color: rgba(1, 21, 38, 1);
+    border-width: 1px;
+    border-radius: 5px;
+    margin: 15px;
+    width: 400px;
+    height: 380px;
+}
+
+h2, .titleBiodiversity, .nameAnimal, .typeAnimal, .regionAnimal {
+    color: rgba(1, 21, 38, 1);
+}
+
+.imageAnimal {
+    object-fit: cover;
+    width: 400px;
+    height: 250px;
+}
+
+.nameAnimal {
+    font-weight: bold;
+    font-size: 25px;
+}
+
+p {
+    line-height: 0.5;
+    margin-left: 10px;
+}
