@@ -11,7 +11,6 @@ const WrapperGlobe = () => {
   const globeEl = useRef();
   // const [countries, setCountries] = useState({ features: [] });
   const [altitude, setAltitude] = useState(0.01);
-  const [transitionDuration, setTransitionDuration] = useState(1000);
   const [pointsData, setPointsData] = useState([]);
 
   const { width, height } = useWindowSize();
