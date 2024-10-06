@@ -12,7 +12,7 @@ const News = () => {
       try {
         const response = await fetch(`https://google-news-consultor.onrender.com/api?q=${query}`);
         const data = await response.json();
-        setNews(data);
+        setNews(data.news);
       } catch (error) {
         setError(error.message);
       } finally {
