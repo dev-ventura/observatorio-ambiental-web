@@ -1,6 +1,8 @@
 .page {
     display: flex;
     flex-direction: row;
+    height: 100%;
+
 }
 .menu {
     background: rgba(44, 89, 79, 1);
